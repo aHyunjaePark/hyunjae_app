@@ -4,8 +4,9 @@ class UsersController < ApplicationController
   respond_to :html
 
   def index
-    test_block_proc_lambda
     @users = User.all
+    # test_block_proc_lambda
+    # @users = User.all
     respond_with(@users)
   end
 
